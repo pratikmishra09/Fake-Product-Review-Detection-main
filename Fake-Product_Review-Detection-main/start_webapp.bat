@@ -1,0 +1,3 @@
+@echo off
+echo Starting Fake Review Detection Web App...
+streamlit run web_app.py

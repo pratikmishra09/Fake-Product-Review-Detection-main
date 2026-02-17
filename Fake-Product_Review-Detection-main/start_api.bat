@@ -1,0 +1,3 @@
+@echo off
+echo Starting Fake Review Detection API...
+python app.py

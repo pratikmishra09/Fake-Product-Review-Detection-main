@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./monitoring:/app/monitoring
+    environment:
+      - FLASK_ENV=production
+      - MODEL_PATH=models/svm.pkl
+    restart: unless-stopped
+    
+  web:
+    build: .
+    command: streamlit run web_app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+    restart: unless-stopped

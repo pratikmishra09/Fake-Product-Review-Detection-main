@@ -1,0 +1,40 @@
+# Dataset (too large for GitHub - 321 MB)
+ecommerce_product_reviews_dataset.csv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Monitoring data
+monitoring/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Model files (optional - uncomment if models are too large)
+# models/*.pkl
+
+# Temporary files
+*.tmp
+*.bak
